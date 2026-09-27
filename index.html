@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<head>
+    <title>portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="taskbar">
+
+        <button class="start-button" id="startButton">
+            Start
+        </button>
+
+        <div class="taskbar-windows">
+
+            <button class="task-button">
+                My Computer
+            </button>
+
+            <button class="task-button">
+                Internet Explorer
+            </button>
+
+        </div>
+
+        <div class="clock">
+            9:42 AM
+        </div>
+
+    </div>
+
+
+    <!-- START MENU -->
+
+    <div id="startMenu" class="start-menu">
+
+        <div class="start-menu-top">
+
+            <div class="user-panel">
+
+                <div class="user-icon">
+                    <img class="item-icon" src="user.ico" alt="">
+                </div>
+
+                <div class="user-name">
+                    Joseph Polat
+                </div>
+
+            </div>
+
+
+            <div class="start-items">
+
+                <div class="start-item" id="projectsButton">
+                    <img class="item-icon" src="folder-full.ico" alt="">
+                    Projects
+                </div>
+
+                <div class="start-item" id="resumeButton">
+                    <img class="item-icon" src="document.ico" alt="">
+                    Resume
+                </div>
+
+                <div class="start-item" id="computerButton">
+                    <img class="item-icon" src="computer.ico" alt="">
+                    My Computer
+                </div>
+
+                <div class="start-item" id="documentsButton">
+                    <img class="item-icon" src="folder-full.ico" alt="">
+                    Documents
+                </div>
+
+                <div class="start-item" id="picturesButton">
+                    <img class="item-icon" src="photos.ico" alt="">
+                    Pictures
+                </div>
+
+                <div class="start-item">
+                    <img class="item-icon" src="control-panel.ico" alt="">
+                    Control Panel
+                </div>
+
+                <div class="start-item" onclick="openRun();">
+                    <img class="item-icon" src="run.ico" alt="">
+                    Run...
+                </div>
+
+                <div class="start-item">
+                    <img class="item-icon" src="question-mark.ico" alt="">
+                    About Me
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="start-menu-bottom">
+
+            <input
+                type="text"
+                class="search-box"
+                placeholder="Search programs and files"
+            >
+
+            <button class="shutdown-button">
+                Shut down
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- EXPLORER WINDOW -->
+
+    <div id="explorerWindow" class="window">
+
+        <div class="title-bar">
+
+            <div class="title">
+
+                <img id="windowIcon" src="folder-empty.ico" alt="">
+
+                <span id="windowTitle">
+                    Projects
+                </span>
+
+            </div>
+
+
+            <div class="window-buttons">
+
+                <button>
+                    _
+                </button>
+
+                <button>
+                    □
+                </button>
+
+                <button id="closeExplorer">
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-bar">
+
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Tools</span>
+            <span>Help</span>
+
+        </div>
+
+
+        <div class="explorer-toolbar">
+
+            <div class="navigation-buttons">
+
+                <button class="nav-button">
+                    ←
+                </button>
+
+                <button class="nav-button">
+                    →
+                </button>
+
+                <button class="nav-button">
+                    ↑
+                </button>
+
+            </div>
+
+
+            <div class="address-container">
+
+                <div class="address-bar">
+
+                    <img src="computer.ico" alt="">
+
+                    <span>
+                        Computer
+                    </span>
+
+                    <span class="breadcrumb-arrow">
+                        ›
+                    </span>
+
+                    <img id="addressIcon" src="folder-empty.ico" alt="">
+
+                    <span id="addressFolder">
+                        Projects
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-container">
+
+                <input
+                    id="searchBox"
+                    type="text"
+                    placeholder="Search Projects"
+                >
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="explorer-body">
+
+            <div class="navigation-pane">
+
+                <div class="nav-section">
+
+                    <div class="nav-heading">
+                        Favorites
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="folder-full.ico" alt="">
+                        Desktop
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="folder-full.ico" alt="">
+                        Downloads
+                    </div>
+
+                </div>
+
+
+                <div class="nav-section">
+
+                    <div class="nav-heading">
+                        Libraries
+                    </div>
+
+                    <div class="nav-item" id="documentsNav">
+                        <img src="document.ico" alt="">
+                        Documents
+                    </div>
+
+                    <div class="nav-item" id="picturesNav">
+                        <img src="photos.ico" alt="">
+                        Pictures
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="music.ico" alt="">
+                        Music
+                    </div>
+
+                </div>
+
+
+                <div class="nav-section">
+
+                    <div class="nav-heading">
+                        Computer
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="computer.ico" alt="">
+                        Computer
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="drive.ico" alt="">
+                        Local Disk (C:)
+                    </div>
+
+                    <div class="nav-item">
+                        <img src="network.ico" alt="">
+                        Network
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="pane-separator"></div>
+
+
+            <div id="filesArea" class="files-area">
+            </div>
+
+        </div>
+
+
+        <div class="status-bar">
+
+            <span id="statusText">
+                4 items
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTEPAD WINDOW -->
+
+    <div id="notepadWindow" class="window notepad-window">
+
+        <div class="title-bar">
+
+            <div class="title">
+
+                <img src="document.ico" alt="">
+
+                <span id="notepadTitle">
+                    README.txt - Notepad
+                </span>
+
+            </div>
+
+            <div class="window-buttons">
+
+                <button>_</button>
+
+                <button>□</button>
+
+                <button id="closeNotepad">
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="notepad-menu">
+
+            <span>File</span>
+            <span>Edit</span>
+            <span>Format</span>
+            <span>View</span>
+            <span>Help</span>
+
+        </div>
+
+
+        <textarea
+            id="notepadContent"
+            class="notepad-content"
+            spellcheck="false"
+        ></textarea>
+
+
+        <div class="notepad-status">
+
+            <span id="notepadPosition">
+                Ln 1, Col 1
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- PHOTO VIEWER WINDOW -->
+
+    <div id="photoViewerWindow" class="window photo-viewer-window">
+
+        <div class="title-bar">
+
+            <div class="title">
+
+                <img src="photos.ico" alt="">
+
+                <span id="photoViewerTitle">
+                    Photo Viewer
+                </span>
+
+            </div>
+
+            <div class="window-buttons">
+
+                <button>_</button>
+
+                <button>□</button>
+
+                <button id="closePhotoViewer">
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-bar">
+
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Tools</span>
+            <span>Help</span>
+
+        </div>
+
+
+        <div class="photo-viewer-body">
+
+            <button
+                id="previousPhoto"
+                class="photo-nav-button"
+            >
+                ←
+            </button>
+
+
+            <div class="photo-display">
+
+                <img
+                    id="photoViewerImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <button
+                id="nextPhoto"
+                class="photo-nav-button"
+            >
+                →
+            </button>
+
+        </div>
+
+
+        <div class="status-bar">
+
+            <span id="photoViewerStatus">
+                1 of 1
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- RUN WINDOW -->
+
+    <div id="runWindow" class="run-window">
+
+        <div class="run-title-bar">
+
+            <div class="run-title">
+
+                <img src="run.ico" alt="">
+
+                Run
+
+            </div>
+
+            <div class="run-window-buttons">
+
+                <button id="closeRun">
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="run-content">
+
+            <div class="run-icon">
+
+                <img src="run.ico" alt="">
+
+            </div>
+
+            <div class="run-message">
+
+                <p>
+                    I wonder what this does...
+                </p>
+
+                <label for="runInput">
+                    Run:
+                </label>
+
+                <input
+                    type="text"
+                    id="runInput"
+                    class="run-input"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="run-buttons">
+
+            <button id="runOK" class="classic-button">
+                OK
+            </button>
+
+            <button id="runCancel" class="classic-button">
+                Cancel
+            </button>
+
+            <button id="runBrowse" class="classic-button">
+                Browse...
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESKTOP ICONS -->
+
+    <div class="desktop-icons" id="recycleBin">
+
+        <img src="recycle-bin-empty.ico">
+
+    </div>
+
+    <div class="desktop-icons" id="projectsDesktopFolder">
+
+        <img src="folder-full.ico">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

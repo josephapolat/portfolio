@@ -1,0 +1,1166 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #3f7f9f;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   TASKBAR
+   ========================================= */
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 30px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+
+    box-shadow: 0 -1px 0 #808080;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Start button */
+
+.start-button {
+    height: 24px;
+
+    margin-left: 3px;
+
+    padding: 0 10px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.start-button:active,
+.start-button.pressed {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* Taskbar windows */
+
+.taskbar-windows {
+    display: flex;
+
+    gap: 3px;
+
+    margin-left: 5px;
+}
+
+.task-button {
+    height: 24px;
+
+    min-width: 130px;
+
+    padding: 0 8px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    text-align: left;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+
+/* Clock */
+
+.clock {
+    margin-left: auto;
+
+    height: 24px;
+
+    padding: 5px 10px;
+
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+
+    color: #000000;
+}
+
+
+/* =========================================
+   START MENU
+   ========================================= */
+
+.start-menu {
+    display: none;
+
+    position: fixed;
+
+    left: 3px;
+    bottom: 30px;
+
+    width: 390px;
+    height: 430px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    box-shadow: 2px 2px 0 #000;
+}
+
+.start-menu.open {
+    display: block;
+}
+
+
+/* Start menu top */
+
+.start-menu-top {
+    display: flex;
+
+    height: 370px;
+}
+
+
+/* User section */
+
+.user-panel {
+    width: 110px;
+
+    background: #000080;
+
+    color: white;
+
+    padding-top: 15px;
+
+    text-align: center;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: auto;
+    margin-bottom: 10px;
+
+    background: #c0c0c0;
+
+    color: #000;
+
+    border: 2px solid white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.user-name {
+    font-weight: bold;
+
+    word-break: break-word;
+}
+
+
+/* Start items */
+
+.start-items {
+    flex: 1;
+
+    background: #c0c0c0;
+
+    padding: 8px 5px;
+}
+
+.start-item {
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.start-item:hover {
+    background: #000080;
+
+    color: white;
+}
+
+
+/* Icons */
+
+.item-icon {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 8px;
+
+    object-fit: contain;
+}
+
+.desktop-icons img {
+    width: 64px;
+    height: 64px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* Start menu bottom */
+
+.start-menu-bottom {
+    height: 58px;
+
+    border-top: 2px solid #808080;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 8px;
+}
+
+
+/* Search */
+
+.search-box {
+    flex: 1;
+
+    height: 25px;
+
+    border: 2px solid #808080;
+
+    border-top-color: #404040;
+    border-left-color: #404040;
+
+    padding: 3px 6px;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+}
+
+
+/* Shutdown */
+
+.shutdown-button {
+    height: 25px;
+
+    margin-left: 8px;
+
+    padding: 0 10px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.shutdown-button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
+/* =========================================
+   WINDOWS
+   ========================================= */
+
+.window {
+    display: none;
+
+    position: absolute;
+
+    top: 100px;
+    left: 200px;
+
+    width: 800px;
+    height: 500px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    box-shadow: 2px 2px 0 #000;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TITLE BAR
+   ========================================= */
+
+.title-bar {
+    height: 24px;
+
+    background: #000080;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 4px;
+
+    cursor: default;
+
+    user-select: none;
+}
+
+.title {
+    display: flex;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    flex: 1;
+}
+
+.title img {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 5px;
+}
+
+.window-buttons {
+    display: flex;
+
+    gap: 2px;
+
+    padding-right: 2px;
+}
+
+.window-buttons button {
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    line-height: 12px;
+
+    cursor: pointer;
+}
+
+.window-buttons button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
+/* =========================================
+   MENU BAR
+   ========================================= */
+
+.menu-bar {
+    height: 25px;
+
+    background: #c0c0c0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 6px;
+
+    border-bottom: 1px solid #808080;
+}
+
+.menu-bar span {
+    padding: 4px 9px;
+
+    cursor: default;
+}
+
+.menu-bar span:hover {
+    background: #000080;
+
+    color: white;
+}
+
+
+/* =========================================
+   EXPLORER TOOLBAR
+   ========================================= */
+
+.explorer-toolbar {
+    height: 43px;
+
+    background: #c0c0c0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px;
+
+    gap: 5px;
+
+    border-bottom: 1px solid #808080;
+}
+
+
+/* Navigation buttons */
+
+.navigation-buttons {
+    display: flex;
+
+    gap: 2px;
+}
+
+.nav-button {
+    width: 30px;
+    height: 27px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.nav-button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
+/* =========================================
+   ADDRESS BAR
+   ========================================= */
+
+.address-container {
+    flex: 1;
+}
+
+.address-bar {
+    height: 27px;
+
+    background: white;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 3px 6px;
+
+    gap: 5px;
+
+    color: #000;
+}
+
+.address-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+.breadcrumb-arrow {
+    color: #555;
+
+    font-size: 14px;
+
+    margin: 0 2px;
+}
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.search-container {
+    position: relative;
+
+    width: 150px;
+}
+
+.search-container input {
+    width: 100%;
+    height: 27px;
+
+    background: white;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    padding: 4px 25px 4px 6px;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+}
+
+.search-icon {
+    position: absolute;
+
+    right: 6px;
+    top: 5px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   EXPLORER BODY
+   ========================================= */
+
+.explorer-body {
+    display: flex;
+
+    height: calc(100% - 117px);
+
+    background: white;
+}
+
+
+/* =========================================
+   LEFT NAVIGATION PANE
+   ========================================= */
+
+.navigation-pane {
+    width: 175px;
+
+    background: #f3f3f3;
+
+    padding: 10px 7px;
+
+    overflow-y: auto;
+}
+
+.nav-section {
+    margin-bottom: 15px;
+}
+
+.nav-heading {
+    color: #000080;
+
+    font-weight: bold;
+
+    padding: 4px 5px;
+
+    margin-bottom: 2px;
+}
+
+.nav-item {
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 3px 5px 3px 12px;
+
+    cursor: pointer;
+}
+
+.nav-item img {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 6px;
+}
+
+.nav-item:hover {
+    background: #d9e8fb;
+
+    border: 1px solid #7aa7e0;
+
+    padding-left: 11px;
+}
+
+
+/* =========================================
+   SEPARATOR
+   ========================================= */
+
+.pane-separator {
+    width: 2px;
+
+    background: #808080;
+
+    border-right: 1px solid white;
+}
+
+
+/* =========================================
+   FILE AREA
+   ========================================= */
+
+.files-area {
+    flex: 1;
+
+    background: white;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-content: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.file {
+    width: 100px;
+    height: 90px;
+
+    text-align: center;
+
+    padding: 7px;
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+}
+
+.file img {
+    display: block;
+
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 7px;
+}
+
+.file span {
+    display: block;
+
+    color: #000;
+}
+
+.file:hover {
+    background: #d9e8fb;
+
+    border: 1px solid #7aa7e0;
+}
+
+.file:active {
+    background: #316ac5;
+
+    border-color: #1f4f9b;
+
+    color: white;
+}
+
+
+/* =========================================
+   STATUS BAR
+   ========================================= */
+
+.status-bar {
+    height: 25px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #808080;
+
+    padding: 5px 7px;
+
+    color: #000;
+}
+
+
+/* =========================================
+   NOTEPAD WINDOW
+   ========================================= */
+
+.notepad-window {
+    width: 650px;
+    height: 450px;
+
+    top: 130px;
+    left: 250px;
+}
+
+
+/* Notepad menu */
+
+.notepad-menu {
+    height: 25px;
+
+    background: #c0c0c0;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 6px;
+
+    border-bottom: 1px solid #808080;
+}
+
+.notepad-menu span {
+    padding: 4px 9px;
+
+    cursor: default;
+}
+
+.notepad-menu span:hover {
+    background: #000080;
+    color: white;
+}
+
+
+/* Text editing area */
+
+.notepad-content {
+    display: block;
+
+    width: 100%;
+
+    height: calc(100% - 74px);
+
+    resize: none;
+
+    border: none;
+
+    outline: none;
+
+    background: white;
+
+    color: black;
+
+    padding: 5px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+
+    line-height: 16px;
+
+    overflow: auto;
+}
+
+
+/* Notepad status bar */
+
+.notepad-status {
+    height: 25px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #808080;
+
+    padding: 5px 7px;
+
+    color: #000;
+}
+
+
+/* =========================================
+   RUN WINDOW
+   ========================================= */
+
+.run-window {
+    display: none;
+
+    position: absolute;
+
+    top: 220px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 430px;
+    height: 185px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    box-shadow: 2px 2px 0 #000;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    z-index: 100;
+}
+
+
+/* Run title bar */
+
+.run-title-bar {
+    height: 24px;
+
+    background: #000080;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 4px;
+
+    user-select: none;
+
+    cursor: default;
+}
+
+.run-title {
+    display: flex;
+
+    align-items: center;
+
+    flex: 1;
+
+    font-weight: bold;
+}
+
+.run-title img {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 5px;
+}
+
+.run-window-buttons {
+    display: flex;
+
+    padding-right: 2px;
+}
+
+.run-window-buttons button {
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    line-height: 12px;
+
+    cursor: pointer;
+}
+
+.run-window-buttons button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
+/* Run content */
+
+.run-content {
+    display: flex;
+
+    height: 112px;
+
+    padding: 15px 12px 5px 12px;
+}
+
+.run-icon {
+    width: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding-top: 5px;
+}
+
+.run-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.run-message {
+    flex: 1;
+}
+
+.run-message p {
+    margin: 0 0 12px 0;
+
+    line-height: 15px;
+}
+
+.run-message label {
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+
+/* Run input */
+
+.run-input {
+    width: 100%;
+
+    height: 23px;
+
+    background: white;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    padding: 2px 4px;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    outline: none;
+}
+
+
+/* Run buttons */
+
+.run-buttons {
+    height: 47px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 10px;
+}
+
+.classic-button {
+    min-width: 75px;
+
+    height: 25px;
+
+    padding: 0 10px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.classic-button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
+/* =========================================
+   PHOTO VIEWER WINDOW
+   ========================================= */
+
+.photo-viewer-window {
+    width: 750px;
+    height: 550px;
+
+    top: 80px;
+    left: 300px;
+
+    background: #c0c0c0;
+}
+
+
+/* =========================================
+   PHOTO VIEWER BODY
+   ========================================= */
+
+.photo-viewer-body {
+    height: calc(100% - 99px);
+
+    background: #808080;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   PHOTO DISPLAY
+   ========================================= */
+
+.photo-display {
+    flex: 1;
+
+    height: 100%;
+
+    background: #000000;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.photo-display img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   PHOTO NAVIGATION BUTTONS
+   ========================================= */
+
+.photo-nav-button {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.photo-nav-button:active {
+    border-top-color: #404040;
+    border-left-color: #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.photo-nav-button:disabled {
+    color: #808080;
+
+    cursor: default;
+
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
