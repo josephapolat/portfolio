@@ -166,7 +166,8 @@ Thanks for visiting!`
             {
                 name: "live demo",
                 icon: "desktop-bookmark.ico",
-                type: "link"
+                type: "link",
+                url: "https://onlinebanking-1-l0ky.onrender.com/index.html"
             },
 
             {
@@ -522,6 +523,21 @@ function openFolder(folderName) {
 
                         openFolder(
                             item.name
+                        );
+
+                    }
+                );
+
+            }
+            if (item.type === "link") {
+
+                file.addEventListener(
+                    "dblclick",
+                    () => {
+
+                        window.open(
+                            item.url,
+                            "_blank"
                         );
 
                     }
