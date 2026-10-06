@@ -57,6 +57,16 @@ const nextPhoto =
     document.getElementById("nextPhoto");
 
 
+const aboutWindow =
+    document.getElementById("aboutWindow");
+
+const closeAbout =
+    document.getElementById("closeAbout");
+
+const closeAboutButton =
+    document.getElementById("closeAboutButton");
+
+
 // =========================================
 // WINDOW FOCUS / STACKING
 // =========================================
@@ -136,11 +146,7 @@ const folders = {
                 type: "text",
 
                 content:
-`Welcome to my portfolio!
-
-This is my README file.
-
-Thanks for visiting!`
+                    `Double click any of the folder icons to access information about my projects.`
             }
 
         ]
@@ -160,7 +166,80 @@ Thanks for visiting!`
                 name: "README.txt",
                 icon: "document.ico",
                 type: "text",
-                content: "Online Banking project"
+                content: `ONLINE BANKING APP
+
+This is a full-stack online banking application I built
+to practice working with a frontend, backend, database,
+and user authentication.
+
+TECHNOLOGIES USED
+
+Frontend:
+- JavaScript
+- HTML
+- CSS
+
+Backend:
+- Java
+- Spring Boot
+- Spring Security
+- JWT
+- Maven
+
+Database:
+- PostgreSQL
+
+FEATURES
+
+- User login
+- User authentication
+- JWT authentication
+- Customer information
+- Bank account information
+- Account balances
+- Account numbers
+- Account nicknames
+- Primary and secondary account signers
+
+HOW IT WORKS
+
+The frontend is built with React and communicates with
+the Spring Boot backend using REST API requests.
+
+When a user logs in, their credentials are sent to the
+backend. If the login is successful, the backend returns
+a JWT token. The frontend then uses that token when
+making authenticated requests.
+
+The backend connects to a PostgreSQL database to store
+and retrieve the application's data.
+
+WHAT I LEARNED
+
+This project gave me more experience building a full-stack
+application and connecting different parts of an application
+together.
+
+Some of the main things I practiced were:
+
+- Building REST APIs with Spring Boot
+- Using PostgreSQL
+- Working with JWT authentication
+- Using Spring Security
+- Debugging frontend and backend issues
+- Deploying an application
+
+LIVE DEMO
+
+https://onlinebanking-1-l0ky.onrender.com/index.html
+
+GITHUB
+
+https://github.com/josephapolat/onlinebanking.git
+
+AUTHOR
+
+Joseph Polat`
             },
 
             {
@@ -173,25 +252,29 @@ Thanks for visiting!`
             {
                 name: "github",
                 icon: "desktop-bookmark.ico",
-                type: "link"
+                type: "link",
+                url: "https://github.com/josephapolat/onlinebanking.git"
             },
 
             {
                 name: "example-photo-1",
                 icon: "photos.ico",
-                type: "photo"
+                type: "photo",
+                image: "ob-sc-1.png"
             },
 
             {
                 name: "example-photo-2",
                 icon: "photos.ico",
-                type: "photo"
+                type: "photo",
+                image: "ob-sc-2.png"
             },
 
             {
                 name: "example-photo-3",
                 icon: "photos.ico",
-                type: "photo"
+                type: "photo",
+                image: "ob-sc-3.png"
             }
 
         ]
@@ -211,19 +294,39 @@ Thanks for visiting!`
                 name: "README.txt",
                 icon: "document.ico",
                 type: "text",
-                content: "Forum"
+                content: "Live demo coming soon"
             },
 
             {
                 name: "live demo",
                 icon: "desktop-bookmark.ico",
-                type: "link"
+                type: "link",
+                url: ""
             },
 
             {
                 name: "github",
                 icon: "desktop-bookmark.ico",
-                type: "link"
+                type: "link",
+                url: ""
+            },
+            {
+                name: "example-photo-1",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
+            },
+            {
+                name: "example-photo-2",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
+            },
+            {
+                name: "example-photo-3",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
             }
 
         ]
@@ -244,7 +347,7 @@ Thanks for visiting!`
                 icon: "document.ico",
                 type: "text",
                 content:
-                    "Banker Maintenance Command Line Application"
+                    "Live demo coming soon"
             },
 
             {
@@ -256,7 +359,26 @@ Thanks for visiting!`
             {
                 name: "github",
                 icon: "desktop-bookmark.ico",
-                type: "link"
+                type: "link",
+                url: ""
+            },
+            {
+                name: "example-photo-1",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
+            },
+            {
+                name: "example-photo-2",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
+            },
+            {
+                name: "example-photo-3",
+                icon: "photos.ico",
+                type: "photo",
+                image: ""
             }
 
         ]
@@ -295,31 +417,6 @@ Thanks for visiting!`
     },
 
 
-    Pictures: {
-
-        icon: "photos.ico",
-
-        search: "Search Pictures",
-
-        items: [
-
-            {
-                name: "Profile Picture",
-                type: "photo",
-                icon: "photos.ico"
-            },
-
-            {
-                name: "Portfolio Screenshot",
-                type:"photo",
-                icon: "photos.ico"
-            }
-
-        ]
-
-    },
-
-
     Resume: {
 
         icon: "document.ico",
@@ -330,7 +427,9 @@ Thanks for visiting!`
 
             {
                 name: "Joseph Polat - Resume.pdf",
-                icon: "document.ico"
+                icon: "document.ico",
+                type: "link",
+                url: "joseph-polat-resume.pdf"
             }
 
         ]
@@ -338,32 +437,26 @@ Thanks for visiting!`
     },
 
 
-    "My Computer": {
+    "Social": {
 
-        icon: "computer.ico",
+        icon: "folder-full.ico",
 
         search: "Search Computer",
 
         items: [
 
             {
-                name: "Local Disk (C:)",
-                icon: "hard-drive.ico"
+                name: "linkedin",
+                icon: "desktop-bookmark.ico",
+                type: "link",
+                url: "https://linkedin.com/in/joseph-aydin-polat"
             },
 
             {
-                name: "Network",
-                icon: "network.ico"
-            },
-
-            {
-                name: "Documents",
-                icon: "folder-full.ico"
-            },
-
-            {
-                name: "Pictures",
-                icon: "photos.ico"
+                name: "github",
+                icon: "desktop-bookmark.ico",
+                type: "link",
+                url: "https://github.com/josephapolat"
             }
 
         ]
@@ -529,6 +622,10 @@ function openFolder(folderName) {
                 );
 
             }
+
+
+            // Links
+
             if (item.type === "link") {
 
                 file.addEventListener(
@@ -613,14 +710,14 @@ const projectsButton =
 const documentsButton =
     document.getElementById("documentsButton");
 
-const picturesButton =
-    document.getElementById("picturesButton");
-
 const resumeButton =
     document.getElementById("resumeButton");
 
-const computerButton =
-    document.getElementById("computerButton");
+const socialButton =
+    document.getElementById("socialButton");
+
+const aboutButton =
+    document.getElementById("aboutButton");
 
 
 projectsButton.addEventListener(
@@ -631,34 +728,6 @@ projectsButton.addEventListener(
 
         openFolder(
             "Projects"
-        );
-
-    }
-);
-
-
-documentsButton.addEventListener(
-    "click",
-    (event) => {
-
-        event.stopPropagation();
-
-        openFolder(
-            "Documents"
-        );
-
-    }
-);
-
-
-picturesButton.addEventListener(
-    "click",
-    (event) => {
-
-        event.stopPropagation();
-
-        openFolder(
-            "Pictures"
         );
 
     }
@@ -679,14 +748,83 @@ resumeButton.addEventListener(
 );
 
 
-computerButton.addEventListener(
+socialButton.addEventListener(
     "click",
     (event) => {
 
         event.stopPropagation();
 
         openFolder(
-            "My Computer"
+            "Social"
+        );
+
+    }
+);
+
+
+// =========================================
+// ABOUT ME
+// =========================================
+
+function openAbout() {
+
+    aboutWindow.style.display =
+        "block";
+
+    bringToFront(
+        aboutWindow
+    );
+
+    startMenu.classList.remove(
+        "open"
+    );
+
+    startButton.classList.remove(
+        "pressed"
+    );
+}
+
+
+aboutButton.addEventListener(
+    "click",
+    (event) => {
+
+        event.stopPropagation();
+
+        openAbout();
+
+    }
+);
+
+
+closeAbout.addEventListener(
+    "click",
+    () => {
+
+        aboutWindow.style.display =
+            "none";
+
+    }
+);
+
+
+closeAboutButton.addEventListener(
+    "click",
+    () => {
+
+        aboutWindow.style.display =
+            "none";
+
+    }
+);
+
+
+aboutWindow.addEventListener(
+    "mousedown",
+    () => {
+
+        bringToFront(
+            aboutWindow
         );
 
     }
@@ -700,8 +838,11 @@ computerButton.addEventListener(
 const documentsNav =
     document.getElementById("documentsNav");
 
-const picturesNav =
-    document.getElementById("picturesNav");
+const socialNav =
+    document.getElementById("socialNav");
+
+const projectsNav =
+    document.getElementById("projectsNav");
 
 
 documentsNav.addEventListener(
@@ -716,12 +857,24 @@ documentsNav.addEventListener(
 );
 
 
-picturesNav.addEventListener(
+socialNav.addEventListener(
     "click",
     () => {
 
         openFolder(
-            "Pictures"
+            "Social"
+        );
+
+    }
+);
+
+
+projectsNav.addEventListener(
+    "click",
+    () => {
+
+        openFolder(
+            "Projects"
         );
 
     }
@@ -1077,8 +1230,6 @@ function makeWindowDraggable(
         "mousedown",
         (event) => {
 
-            // Don't drag when clicking buttons
-
             if (
                 event.target.closest(
                     ".window-buttons, .run-window-buttons"
@@ -1117,13 +1268,9 @@ function makeWindowDraggable(
                 "grabbing";
 
 
-            // Remove transforms before dragging
-
             windowElement.style.transform =
                 "none";
 
-
-            // Prevent selecting the title text
 
             event.preventDefault();
 
@@ -1173,16 +1320,12 @@ function makeWindowDraggable(
                 offsetY;
 
 
-            // Keep inside left edge
-
             newLeft =
                 Math.max(
                     0,
                     newLeft
                 );
 
-
-            // Keep inside top edge
 
             newTop =
                 Math.max(
@@ -1191,16 +1334,12 @@ function makeWindowDraggable(
                 );
 
 
-            // Keep inside right edge
-
             newLeft =
                 Math.min(
                     maxLeft,
                     newLeft
                 );
 
-
-            // Keep inside bottom edge
 
             newTop =
                 Math.min(
@@ -1270,6 +1409,12 @@ const photoViewerTitleBar =
     );
 
 
+const aboutTitleBar =
+    aboutWindow.querySelector(
+        ".title-bar"
+    );
+
+
 makeWindowDraggable(
     explorerWindow,
     explorerTitleBar
@@ -1291,4 +1436,10 @@ makeWindowDraggable(
 makeWindowDraggable(
     photoViewerWindow,
     photoViewerTitleBar
+);
+
+
+makeWindowDraggable(
+    aboutWindow,
+    aboutTitleBar
 );

@@ -1164,3 +1164,184 @@ body {
     border-right-color: #ffffff;
     border-bottom-color: #ffffff;
 }
+/* =========================================
+   ABOUT ME WINDOW
+   ========================================= */
+
+.about-window {
+    width: 500px;
+    height: 420px;
+
+    top: 130px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #c0c0c0;
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+   ========================================= */
+
+.about-content {
+    height: calc(100% - 24px);
+
+    padding: 18px;
+
+    background: #c0c0c0;
+}
+
+
+/* =========================================
+   ABOUT HEADER
+   ========================================= */
+
+.about-header {
+    display: flex;
+
+    min-height: 90px;
+}
+
+
+.about-computer-icon {
+    width: 100px;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.about-computer-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.about-heading {
+    padding: 5px 0 0 10px;
+}
+
+
+.about-name {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.about-role {
+    color: #000080;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.about-description {
+    line-height: 15px;
+
+    max-width: 330px;
+}
+
+
+/* =========================================
+   DIVIDER
+   ========================================= */
+
+.about-divider {
+    height: 2px;
+
+    margin: 12px 0;
+
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/* =========================================
+   ABOUT SECTIONS
+   ========================================= */
+
+.about-section-title {
+    color: #000080;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.about-text {
+    line-height: 15px;
+
+    background: #ffffff;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    padding: 8px;
+
+    height: 115px;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   SYSTEM INFORMATION
+   ========================================= */
+
+.about-info {
+    background: #ffffff;
+
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    padding: 7px 9px;
+}
+
+
+.about-info-row {
+    display: flex;
+
+    line-height: 17px;
+}
+
+
+.about-label {
+    width: 70px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ABOUT BUTTONS
+   ========================================= */
+
+.about-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 12px;
+}
+
+
+.about-buttons .classic-button {
+    min-width: 75px;
+}

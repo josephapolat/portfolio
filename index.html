@@ -13,17 +13,6 @@
             Start
         </button>
 
-        <div class="taskbar-windows">
-
-            <button class="task-button">
-                My Computer
-            </button>
-
-            <button class="task-button">
-                Internet Explorer
-            </button>
-
-        </div>
 
         <div class="clock">
             9:42 AM
@@ -63,24 +52,14 @@
                     Resume
                 </div>
 
-                <div class="start-item" id="computerButton">
-                    <img class="item-icon" src="computer.ico" alt="">
-                    My Computer
-                </div>
-
-                <div class="start-item" id="documentsButton">
+                <div class="start-item" id="socialButton">
                     <img class="item-icon" src="folder-full.ico" alt="">
-                    Documents
-                </div>
-
-                <div class="start-item" id="picturesButton">
-                    <img class="item-icon" src="photos.ico" alt="">
-                    Pictures
+                    Social
                 </div>
 
                 <div class="start-item">
                     <img class="item-icon" src="control-panel.ico" alt="">
-                    Control Panel
+                    Site Settings
                 </div>
 
                 <div class="start-item" onclick="openRun();">
@@ -88,7 +67,7 @@
                     Run...
                 </div>
 
-                <div class="start-item">
+                <div class="start-item" id="aboutButton">
                     <img class="item-icon" src="question-mark.ico" alt="">
                     About Me
                 </div>
@@ -214,10 +193,6 @@
                     placeholder="Search Projects"
                 >
 
-                <span class="search-icon">
-                    🔍
-                </span>
-
             </div>
 
         </div>
@@ -233,14 +208,13 @@
                         Favorites
                     </div>
 
-                    <div class="nav-item">
+                    <div class="nav-item" id="socialNav">
                         <img src="folder-full.ico" alt="">
-                        Desktop
+                        Social
                     </div>
-
-                    <div class="nav-item">
+                    <div class="nav-item" id="projectsNav">
                         <img src="folder-full.ico" alt="">
-                        Downloads
+                        Projects
                     </div>
 
                 </div>
@@ -255,16 +229,6 @@
                     <div class="nav-item" id="documentsNav">
                         <img src="document.ico" alt="">
                         Documents
-                    </div>
-
-                    <div class="nav-item" id="picturesNav">
-                        <img src="photos.ico" alt="">
-                        Pictures
-                    </div>
-
-                    <div class="nav-item">
-                        <img src="music.ico" alt="">
-                        Music
                     </div>
 
                 </div>
@@ -532,6 +496,149 @@
 
     </div>
 
+    <!-- ABOUT ME WINDOW -->
+
+<div id="aboutWindow" class="window about-window">
+
+    <div class="title-bar">
+
+        <div class="title">
+
+            <img src="computer.ico" alt="">
+
+            <span>
+                About Joseph Polat
+            </span>
+
+        </div>
+
+        <div class="window-buttons">
+
+            <button>_</button>
+
+            <button>□</button>
+
+            <button id="closeAbout">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="about-header">
+
+            <div class="about-computer-icon">
+
+                <img src="computer.ico" alt="Computer">
+
+            </div>
+
+
+            <div class="about-heading">
+
+                <div class="about-name">
+                    Joseph Polat
+                </div>
+
+                <div class="about-role">
+                    Software Developer
+                </div>
+
+                <div class="about-description">
+                    Full Stack Developer focused on building
+                    practical and user-friendly applications.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-divider"></div>
+
+
+        <div class="about-section">
+
+            <div class="about-section-title">
+                About Me
+            </div>
+
+            <div class="about-text">
+
+                I'm a software developer who enjoys building
+                applications and learning new technologies.
+
+                <br><br>
+
+                My background in customer service and banking
+                has helped me develop strong communication,
+                problem-solving, and attention-to-detail skills.
+
+                <br><br>
+
+                I'm currently focused on growing as a full stack
+                developer and creating projects that demonstrate
+                my technical skills.
+
+            </div>
+
+        </div>
+
+
+        <div class="about-divider"></div>
+
+
+        <div class="about-section">
+
+            <div class="about-section-title">
+                System Information
+            </div>
+
+            <div class="about-info">
+
+                <div class="about-info-row">
+                    <span class="about-label">Name:</span>
+                    <span>Joseph Polat</span>
+                </div>
+
+                <div class="about-info-row">
+                    <span class="about-label">Role:</span>
+                    <span>Full Stack Developer</span>
+                </div>
+
+                <div class="about-info-row">
+                    <span class="about-label">Focus:</span>
+                    <span>Java • Spring Boot • React • SQL</span>
+                </div>
+
+                <div class="about-info-row">
+                    <span class="about-label">Status:</span>
+                    <span>Available for opportunities</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-buttons">
+
+            <button
+                id="closeAboutButton"
+                class="classic-button"
+            >
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
     <!-- DESKTOP ICONS -->
 
