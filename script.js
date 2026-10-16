@@ -349,13 +349,6 @@ Joseph Polat`
                 content:
                     "Live demo coming soon"
             },
-
-            {
-                name: "live demo",
-                icon: "desktop-bookmark.ico",
-                type: "link"
-            },
-
             {
                 name: "github",
                 icon: "desktop-bookmark.ico",
@@ -395,12 +388,10 @@ Joseph Polat`
         items: [
 
             {
-                name: "Joseph-Polat-Resume.docx",
+                name: "Joseph-Polat-Resume.pdf",
                 icon: "document.ico",
-                type: "text",
-
-                content:
-                    "THIS IS MY RESUME"
+                type: "link",
+                url: "joseph-polat-resume.pdf"
             },
 
             {
