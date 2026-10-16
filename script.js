@@ -294,14 +294,14 @@ Joseph Polat`
                 name: "README.txt",
                 icon: "document.ico",
                 type: "text",
-                content: "Live demo coming soon"
+                content: ""
             },
 
             {
                 name: "live demo",
                 icon: "desktop-bookmark.ico",
                 type: "link",
-                url: ""
+                url: "https://forum-xfrm.onrender.com/"
             },
 
             {
