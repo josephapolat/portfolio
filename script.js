@@ -434,25 +434,25 @@ Improve error handling and validation`
                 name: "example-photo-1",
                 icon: "photos.ico",
                 type: "photo",
-                image: "f-sc-1"
+                image: "f-sc-1.png"
             },
             {
                 name: "example-photo-2",
                 icon: "photos.ico",
                 type: "photo",
-                image: "f-sc-2"
+                image: "f-sc-2.png"
             },
             {
                 name: "example-photo-3",
                 icon: "photos.ico",
                 type: "photo",
-                image: "f-sc-3"
+                image: "f-sc-3.png"
             },
             {
                 name: "example-photo-4",
                 icon: "photos.ico",
                 type: "photo",
-                image: "f-sc-4"
+                image: "f-sc-4.png"
             }
 
         ]
