@@ -294,7 +294,127 @@ Joseph Polat`
                 name: "README.txt",
                 icon: "document.ico",
                 type: "text",
-                content: ""
+                content: `Full-Stack Forum App
+
+About the Project
+
+This is a full-stack forum application where users can register, log in, create posts, and interact with other posts. I built this project to practice full-stack development and learn how the frontend, backend, and database work together.
+
+Features
+
+User registration and login
+
+User authentication
+
+Create and view forum posts
+
+Reply to posts
+
+View and update profile information
+
+Search functionality
+
+Navigation between pages using React Router
+
+Technologies Used
+
+Frontend
+
+React
+
+JavaScript
+
+HTML
+
+CSS
+
+Axios
+
+React Router
+
+Backend
+
+Java
+
+Spring Boot
+
+Maven
+
+REST APIs
+
+Database
+
+PostgreSQL
+
+JDBC
+
+Deployment
+
+Render
+
+Docker
+
+Live Demo
+
+View the live application
+
+GitHub Repository
+
+View the source code
+
+What I Learned
+
+While working on this project, I gained experience connecting a React frontend to a Java and Spring Boot backend. I worked with REST APIs, user authentication, database queries, and managing user and post data.
+
+I also learned more about deploying a full-stack application using Docker and Render, configuring environment variables, and troubleshooting issues between the frontend, backend, and database.
+
+Running Locally
+
+Prerequisites
+
+Node.js and npm
+
+Java 17
+
+Maven
+
+PostgreSQL
+
+Frontend
+
+Clone the repository:
+
+git clone https://github.com/josephapolat/forum.git
+
+Navigate to the project directory.
+
+Install the dependencies:
+
+npm install
+
+Start the frontend development server:
+
+npm run dev
+
+Backend
+
+The backend runs using Spring Boot and Maven. Configure your PostgreSQL database and the required environment variables before starting the application.
+
+Build the application with:
+
+mvn clean package
+
+Then run it using your IDE or the generated JAR file.
+
+Future Improvements
+
+Improve the overall design and user experience
+
+Add more profile customization options
+
+Add additional forum features
+
+Improve error handling and validation`
             },
 
             {
