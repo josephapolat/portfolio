@@ -17,10 +17,6 @@ body {
 }
 
 
-/* =========================================
-   TASKBAR
-   ========================================= */
-
 .taskbar {
     position: fixed;
     bottom: 0;
@@ -40,7 +36,6 @@ body {
 }
 
 
-/* Start button */
 
 .start-button {
     height: 24px;
@@ -72,7 +67,6 @@ body {
 }
 
 
-/* Taskbar windows */
 
 .taskbar-windows {
     display: flex;
@@ -103,7 +97,6 @@ body {
 }
 
 
-/* Clock */
 
 .clock {
     margin-left: auto;
@@ -119,9 +112,6 @@ body {
 }
 
 
-/* =========================================
-   START MENU
-   ========================================= */
 
 .start-menu {
     display: none;
@@ -152,8 +142,6 @@ body {
 }
 
 
-/* Start menu top */
-
 .start-menu-top {
     display: flex;
 
@@ -161,7 +149,6 @@ body {
 }
 
 
-/* User section */
 
 .user-panel {
     width: 110px;
@@ -203,8 +190,6 @@ body {
 }
 
 
-/* Start items */
-
 .start-items {
     flex: 1;
 
@@ -232,7 +217,6 @@ body {
 }
 
 
-/* Icons */
 
 .item-icon {
     width: 32px;
@@ -252,7 +236,6 @@ body {
 }
 
 
-/* Start menu bottom */
 
 .start-menu-bottom {
     height: 58px;
@@ -267,7 +250,6 @@ body {
 }
 
 
-/* Search */
 
 .search-box {
     flex: 1;
@@ -285,8 +267,6 @@ body {
     font-size: 11px;
 }
 
-
-/* Shutdown */
 
 .shutdown-button {
     height: 25px;
@@ -315,11 +295,6 @@ body {
     border-bottom-color: #ffffff;
 }
 
-
-/* =========================================
-   WINDOWS
-   ========================================= */
-
 .window {
     display: none;
 
@@ -347,9 +322,6 @@ body {
 }
 
 
-/* =========================================
-   TITLE BAR
-   ========================================= */
 
 .title-bar {
     height: 24px;
@@ -424,9 +396,6 @@ body {
 }
 
 
-/* =========================================
-   MENU BAR
-   ========================================= */
 
 .menu-bar {
     height: 25px;
@@ -455,10 +424,6 @@ body {
 }
 
 
-/* =========================================
-   EXPLORER TOOLBAR
-   ========================================= */
-
 .explorer-toolbar {
     height: 43px;
 
@@ -475,8 +440,6 @@ body {
     border-bottom: 1px solid #808080;
 }
 
-
-/* Navigation buttons */
 
 .navigation-buttons {
     display: flex;
@@ -507,10 +470,6 @@ body {
     border-bottom-color: #ffffff;
 }
 
-
-/* =========================================
-   ADDRESS BAR
-   ========================================= */
 
 .address-container {
     flex: 1;
@@ -551,10 +510,6 @@ body {
 }
 
 
-/* =========================================
-   SEARCH
-   ========================================= */
-
 .search-container {
     position: relative;
 
@@ -588,9 +543,6 @@ body {
 }
 
 
-/* =========================================
-   EXPLORER BODY
-   ========================================= */
 
 .explorer-body {
     display: flex;
@@ -600,10 +552,6 @@ body {
     background: white;
 }
 
-
-/* =========================================
-   LEFT NAVIGATION PANE
-   ========================================= */
 
 .navigation-pane {
     width: 175px;
@@ -657,9 +605,6 @@ body {
 }
 
 
-/* =========================================
-   SEPARATOR
-   ========================================= */
 
 .pane-separator {
     width: 2px;
@@ -670,9 +615,6 @@ body {
 }
 
 
-/* =========================================
-   FILE AREA
-   ========================================= */
 
 .files-area {
     flex: 1;
@@ -733,9 +675,6 @@ body {
 }
 
 
-/* =========================================
-   STATUS BAR
-   ========================================= */
 
 .status-bar {
     height: 25px;
@@ -750,9 +689,6 @@ body {
 }
 
 
-/* =========================================
-   NOTEPAD WINDOW
-   ========================================= */
 
 .notepad-window {
     width: 650px;
@@ -763,7 +699,6 @@ body {
 }
 
 
-/* Notepad menu */
 
 .notepad-menu {
     height: 25px;
@@ -790,7 +725,6 @@ body {
 }
 
 
-/* Text editing area */
 
 .notepad-content {
     display: block;
@@ -821,7 +755,6 @@ body {
 }
 
 
-/* Notepad status bar */
 
 .notepad-status {
     height: 25px;
@@ -836,9 +769,6 @@ body {
 }
 
 
-/* =========================================
-   RUN WINDOW
-   ========================================= */
 
 .run-window {
     display: none;
@@ -869,7 +799,6 @@ body {
 }
 
 
-/* Run title bar */
 
 .run-title-bar {
     height: 24px;
@@ -942,8 +871,6 @@ body {
 }
 
 
-/* Run content */
-
 .run-content {
     display: flex;
 
@@ -984,7 +911,6 @@ body {
 }
 
 
-/* Run input */
 
 .run-input {
     width: 100%;
@@ -1007,7 +933,6 @@ body {
 }
 
 
-/* Run buttons */
 
 .run-buttons {
     height: 47px;
@@ -1051,9 +976,6 @@ body {
 }
 
 
-/* =========================================
-   PHOTO VIEWER WINDOW
-   ========================================= */
 
 .photo-viewer-window {
     width: 750px;
@@ -1066,9 +988,6 @@ body {
 }
 
 
-/* =========================================
-   PHOTO VIEWER BODY
-   ========================================= */
 
 .photo-viewer-body {
     height: calc(100% - 99px);
@@ -1086,9 +1005,6 @@ body {
 }
 
 
-/* =========================================
-   PHOTO DISPLAY
-   ========================================= */
 
 .photo-display {
     flex: 1;
@@ -1123,9 +1039,6 @@ body {
 }
 
 
-/* =========================================
-   PHOTO NAVIGATION BUTTONS
-   ========================================= */
 
 .photo-nav-button {
     width: 35px;
@@ -1164,9 +1077,7 @@ body {
     border-right-color: #ffffff;
     border-bottom-color: #ffffff;
 }
-/* =========================================
-   ABOUT ME WINDOW
-   ========================================= */
+
 
 .about-window {
     width: 500px;
@@ -1181,9 +1092,6 @@ body {
 }
 
 
-/* =========================================
-   ABOUT CONTENT
-   ========================================= */
 
 .about-content {
     height: calc(100% - 24px);
@@ -1193,10 +1101,6 @@ body {
     background: #c0c0c0;
 }
 
-
-/* =========================================
-   ABOUT HEADER
-   ========================================= */
 
 .about-header {
     display: flex;
@@ -1254,9 +1158,6 @@ body {
 }
 
 
-/* =========================================
-   DIVIDER
-   ========================================= */
 
 .about-divider {
     height: 2px;
@@ -1268,9 +1169,6 @@ body {
 }
 
 
-/* =========================================
-   ABOUT SECTIONS
-   ========================================= */
 
 .about-section-title {
     color: #000080;
@@ -1299,9 +1197,6 @@ body {
 }
 
 
-/* =========================================
-   SYSTEM INFORMATION
-   ========================================= */
 
 .about-info {
     background: #ffffff;
@@ -1329,9 +1224,6 @@ body {
 }
 
 
-/* =========================================
-   ABOUT BUTTONS
-   ========================================= */
 
 .about-buttons {
     display: flex;
@@ -1344,4 +1236,26 @@ body {
 
 .about-buttons .classic-button {
     min-width: 75px;
+}
+.start-hint {
+    position: fixed;
+    bottom: 65px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    z-index: 1000;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    pointer-events: none;
+}
+
+.start-hint-arrow {
+    font-size: 34px;
+    line-height: 1;
+    transform: rotate(-15deg);
 }
