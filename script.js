@@ -428,7 +428,7 @@ Improve error handling and validation`
                 name: "github",
                 icon: "desktop-bookmark.ico",
                 type: "link",
-                url: ""
+                url: "https://github.com/josephapolat/forum.git"
             },
             {
                 name: "example-photo-1",
