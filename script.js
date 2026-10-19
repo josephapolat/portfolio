@@ -434,19 +434,25 @@ Improve error handling and validation`
                 name: "example-photo-1",
                 icon: "photos.ico",
                 type: "photo",
-                image: ""
+                image: "f-sc-1"
             },
             {
                 name: "example-photo-2",
                 icon: "photos.ico",
                 type: "photo",
-                image: ""
+                image: "f-sc-2"
             },
             {
                 name: "example-photo-3",
                 icon: "photos.ico",
                 type: "photo",
-                image: ""
+                image: "f-sc-3"
+            },
+            {
+                name: "example-photo-4",
+                icon: "photos.ico",
+                type: "photo",
+                image: "f-sc-4"
             }
 
         ]
@@ -467,7 +473,53 @@ Improve error handling and validation`
                 icon: "document.ico",
                 type: "text",
                 content:
-                    "Live demo coming soon"
+                    `Banker Maintenance
+
+About the Project
+
+Banker Maintenance is a command-line application built entirely with Java. The application uses file I/O to read and write data, allowing information to be managed through the command line.
+
+I built this project to practice Java programming, working with files, and building an application without relying on a graphical user interface or a database.
+
+Technologies Used
+
+Java
+
+File I/O
+
+Command-line interface (CLI)
+
+What I Learned
+
+Reading and writing data to files using Java
+
+Working with file input and output
+
+Processing user input through the command line
+
+Organizing Java code and application logic
+
+Handling data without using a database
+
+Running Locally
+
+Clone or download the repository.
+
+Open the project in your Java development environment.
+
+Make sure Java is installed.
+
+Compile and run the application using your IDE or the command line.
+
+Future Improvements
+
+Improve input validation and error handling
+
+Add more functionality for managing banker information
+
+Improve the command-line user experience
+
+Make file handling more efficient and reliable`
             },
             {
                 name: "github",
