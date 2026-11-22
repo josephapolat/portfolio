@@ -490,6 +490,9 @@ Improve error handling and validation`
 
 About the Project
 
+***NO WORKING DEMO HOSTED***
+***PLEASE DOWNLOAD TO TEST FROM GITHUB***
+
 Banker Maintenance is a command-line application built entirely with Java. The application uses file I/O to read and write data, allowing information to be managed through the command line.
 
 I built this project to practice Java programming, working with files, and building an application without relying on a graphical user interface or a database.
@@ -539,24 +542,6 @@ Make file handling more efficient and reliable`
                 icon: "desktop-bookmark.ico",
                 type: "link",
                 url: ""
-            },
-            {
-                name: "example-photo-1",
-                icon: "photos.ico",
-                type: "photo",
-                image: ""
-            },
-            {
-                name: "example-photo-2",
-                icon: "photos.ico",
-                type: "photo",
-                image: ""
-            },
-            {
-                name: "example-photo-3",
-                icon: "photos.ico",
-                type: "photo",
-                image: ""
             }
 
         ]
@@ -646,7 +631,7 @@ Make file handling more efficient and reliable`
                 name: "App Store Listing",
                 icon: "desktop-bookmark.ico",
                 type: "link",
-                url: ""
+                url: "https://apps.apple.com/us/app/simple-spice-tracker/id6837461889"
             }
             ]
     }
