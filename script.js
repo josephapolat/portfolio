@@ -637,6 +637,18 @@ Make file handling more efficient and reliable`
 
         ]
 
+    },
+    "Spice Tracker iOS App":{
+        icon: "folder-full.ico",
+        search: "Search Computer",
+        items: [
+            {
+                name: "App Store Listing",
+                icon: "desktop-bookmark.ico",
+                type: "link",
+                url: ""
+            }
+            ]
     }
 
 };
