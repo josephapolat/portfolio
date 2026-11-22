@@ -139,6 +139,11 @@ const folders = {
                 icon: "folder-full.ico",
                 type: "folder"
             },
+            {
+                name: "Spice Tracker iOS App",
+                icon: "folder-full.ico",
+                type: "folder"
+            },
 
             {
                 name: "README.txt",
@@ -171,6 +176,14 @@ const folders = {
 This is a full-stack online banking application I built
 to practice working with a frontend, backend, database,
 and user authentication.
+
+**TEST ACCOUNTS**
+
+Username: janedoe
+Password: password
+
+Username: johndoe
+Password: password
 
 TECHNOLOGIES USED
 
